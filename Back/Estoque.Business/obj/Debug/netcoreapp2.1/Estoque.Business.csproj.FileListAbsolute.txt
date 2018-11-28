@@ -1,0 +1,8 @@
+D:\APS2 - Estoque\Back\Estoque.Business\bin\Debug\netcoreapp2.1\Estoque.Business.deps.json
+D:\APS2 - Estoque\Back\Estoque.Business\bin\Debug\netcoreapp2.1\Estoque.Business.dll
+D:\APS2 - Estoque\Back\Estoque.Business\bin\Debug\netcoreapp2.1\Estoque.Business.pdb
+D:\APS2 - Estoque\Back\Estoque.Business\obj\Debug\netcoreapp2.1\Estoque.Business.csproj.CoreCompileInputs.cache
+D:\APS2 - Estoque\Back\Estoque.Business\obj\Debug\netcoreapp2.1\Estoque.Business.AssemblyInfoInputs.cache
+D:\APS2 - Estoque\Back\Estoque.Business\obj\Debug\netcoreapp2.1\Estoque.Business.AssemblyInfo.cs
+D:\APS2 - Estoque\Back\Estoque.Business\obj\Debug\netcoreapp2.1\Estoque.Business.dll
+D:\APS2 - Estoque\Back\Estoque.Business\obj\Debug\netcoreapp2.1\Estoque.Business.pdb

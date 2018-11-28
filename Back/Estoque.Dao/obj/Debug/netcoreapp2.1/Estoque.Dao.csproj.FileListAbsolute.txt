@@ -1,0 +1,9 @@
+D:\APS2 - Estoque\Back\Estoque.Dao\bin\Debug\netcoreapp2.1\Estoque.Dao.deps.json
+D:\APS2 - Estoque\Back\Estoque.Dao\bin\Debug\netcoreapp2.1\Estoque.Dao.dll
+D:\APS2 - Estoque\Back\Estoque.Dao\bin\Debug\netcoreapp2.1\Estoque.Dao.pdb
+D:\APS2 - Estoque\Back\Estoque.Dao\obj\Debug\netcoreapp2.1\Estoque.Dao.csprojAssemblyReference.cache
+D:\APS2 - Estoque\Back\Estoque.Dao\obj\Debug\netcoreapp2.1\Estoque.Dao.csproj.CoreCompileInputs.cache
+D:\APS2 - Estoque\Back\Estoque.Dao\obj\Debug\netcoreapp2.1\Estoque.Dao.AssemblyInfoInputs.cache
+D:\APS2 - Estoque\Back\Estoque.Dao\obj\Debug\netcoreapp2.1\Estoque.Dao.AssemblyInfo.cs
+D:\APS2 - Estoque\Back\Estoque.Dao\obj\Debug\netcoreapp2.1\Estoque.Dao.dll
+D:\APS2 - Estoque\Back\Estoque.Dao\obj\Debug\netcoreapp2.1\Estoque.Dao.pdb
