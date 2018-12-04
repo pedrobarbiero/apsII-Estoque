@@ -32,3 +32,22 @@ Tabela 1 - Conhecimento em relação a linguagem
 
 ##### Hospedagem: 
 * Hospedagem: [Azure](https://www.microsoft.com/pt-br/education/imagine-academy/default.aspx)
+
+##### Cronograma
+* Capacitação<br>
+    Linguagem de programação - 7 dias;<br>
+    Banco de dados - 3 dias;<br>
+    Github - 1 dia;<br>
+    
+* Setup inicial<br>
+    Definição da arquitetura;<br>
+    Projeto inicial da linguagem de programação escolhida;<br>
+    Criação do banco de dados;<br>
+    Desenvolvimento do módulo de Fornecedor;<br>
+    Desenvolvimento do módulo de Usuário;<br>
+    Desenvolvimento do módulo de Fornecedor;<br>
+    Desenvolvimento de módulo com funçoes genéricas;<br>
+    Desenvolvimento do laioute padrão;<br>
+    
+ 
+Release - 
