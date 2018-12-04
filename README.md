@@ -34,5 +34,5 @@ John      | 5      | 2
 Tabela 1 - Conhecimento em relação a linguagem
 
 ##### Banco de dados: 
-* SGBD: Sql Server
+* SGBD: [SQL Server 2017 Express Edition](https://www.microsoft.com/pt-br/sql-server/sql-server-editions-express)
 * Hospedagem: Azure
