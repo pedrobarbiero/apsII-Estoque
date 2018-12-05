@@ -1,0 +1,108 @@
+//cd_estoque_fornecedor
+	int FornecedorId{get;set;}
+	string RazaoSocial {get;set;}
+	string Fantasia {get;set;}
+	string Bairro {get;set;}
+	int CEP {get;set;}
+	string Cidade {get;set;}
+  string UF {get;set;}
+	string CNPJ {get;set;}
+	string Email {get;set;}
+	string Endereco {get;set;}
+	string IE {get;set;}
+	string Numero {get;set;}
+	string telefone{get;set;}
+	string celular{get;set;}
+	data_cadastro DATE{get;set;}
+    hora_cadastro TIME{get;set;}
+
+//cd_estoque_cliente
+	int ClienteId {get;set;}
+	string Bairro {get;set;}
+	string Celular {get;set;}
+	string Numero {get;set;}
+	string CEP {get;set;}
+	string Cidade {get;set;}
+	string UF {get;set;}
+	string CPF {get;set;}
+	DATE DataNascimento  {get;set;}
+	string Email {get;set;}
+	string Endereco {get;set;}
+	string Nome {get;set;}
+	date DataCadastro {get;set;}
+	time HoraCadastro {get;set;}
+	int RG {get;set;}
+	char Sexo  //m e f {get;set;}
+	string Telefone {get;set;}
+
+//cd_estoque_usuario
+	 int Usuario_id {get;set}
+	 int Funcionario_id {get;set}
+	 string Senha {get;set}
+	 int Permissao {get;set}
+	 string Nome {get;set}
+	 int Ativo {get;set}
+
+//cd_estoque_item_compra
+	int ItemCompraId {get;set;}
+	int NotaCompraId {get;set;}
+	int ProdutoId {get;set;}
+	decimal ValorTotal {get;set;}
+	int Quantidade {get;set;}
+	decimal Valor {get;set;}
+    date DataCadastro {get;set;}
+	time HoraCadastro {get;set;}
+
+//cd_estoque_item_venda
+	 int ItemVendaId {get;set;}
+	 int NotaVendaId {get;set;}
+	 int ProdutoId {get;set;}
+	 decimal Valor {get;set;}
+	 decimal ValorTotal {get;set;}
+	 decimal Quantidade {get;set;}
+	 date DataCadastro {get;set;}
+     time HoraCadastro {get;set;}
+
+//cd_estoque_produto
+	 int ProdutoId {get;set;}
+	 string Nome {get;set;}
+	 string Descricao {get;set;}
+	 decimal ValorCompra {get;set;}
+	 int Quantidade {get;set;}
+
+//cd_estoque_nota_compra
+	 int NotaCompraId {get;set;}
+	 int NumeroNota {get;set;}
+	 DATE Data {get;set;}
+	 decimal ValorTotalNota {get;set;}
+	 int ICMS {get;set;}
+	 decimal Desconto {get;set;}
+	 int FuncionarioId {get;set;}
+	 int FornecedorId {get;set;}
+	 DATE Vencimento {get;set;}
+	 int ChaveAcesso {get;set;}
+	 int IPI {get;set;}
+	 DATE DataCadastro {get;set;}
+	 TIME HoraCadastro {get;set;}
+
+//cd_estoque_nota_venda
+	 int NotaVendaId {get;set;}
+	 decimal Valor {get;set;}
+	 decimal ValorTotal {get;set;}
+	 date Data {get;set;}
+	 decimal Desconto {get;set;}
+	 int FuncionarioId {get;set;}
+	 int ClienteId {get;set;}
+   date DataCadastro {get;set;}
+	 time HoraCadastro {get;set;}
+
+//cd_estoque_venda_prazo
+	 int Venda_prazoId {get;set;}
+	 int Nota_vendaId {get;set;}
+	 int ClienteId {get;set;}
+	 date DataPagamento {get;set;}
+	 date DataVencimento {get;set;}
+	 int QuantidadeParcela {get;set;}
+	 decimal Valor {get;set;}
+	 decimal ValorPago {get;set;}
+	 decimal ValorRestante  {get;set;}
