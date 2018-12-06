@@ -1,8 +1,0 @@
-D:\APS2 - Estoque\Back\Estoque.Model\bin\Debug\netcoreapp2.1\Estoque.Model.deps.json
-D:\APS2 - Estoque\Back\Estoque.Model\bin\Debug\netcoreapp2.1\Estoque.Model.dll
-D:\APS2 - Estoque\Back\Estoque.Model\bin\Debug\netcoreapp2.1\Estoque.Model.pdb
-D:\APS2 - Estoque\Back\Estoque.Model\obj\Debug\netcoreapp2.1\Estoque.Model.csproj.CoreCompileInputs.cache
-D:\APS2 - Estoque\Back\Estoque.Model\obj\Debug\netcoreapp2.1\Estoque.Model.AssemblyInfoInputs.cache
-D:\APS2 - Estoque\Back\Estoque.Model\obj\Debug\netcoreapp2.1\Estoque.Model.AssemblyInfo.cs
-D:\APS2 - Estoque\Back\Estoque.Model\obj\Debug\netcoreapp2.1\Estoque.Model.dll
-D:\APS2 - Estoque\Back\Estoque.Model\obj\Debug\netcoreapp2.1\Estoque.Model.pdb

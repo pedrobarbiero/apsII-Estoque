@@ -3,19 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{3EF6A3A7-EC68-4707-B940-B11B89799A34}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Web", "Estoque.Web\Estoque.Web.csproj", "{F6823476-B21A-4FC1-B98B-357C2EC205E2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Estoque", "Estoque", "{E10AD85A-86BF-4434-A4CD-12849A4528CC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{92081B49-827C-4D02-951B-80CB1ABBD1BC}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Web", "Estoque.Web\Estoque.Web.csproj", "{9A6EDF2B-0E31-489B-A4CD-26B4C2E3328F}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Dao", "Estoque.Dao\Estoque.Dao.csproj", "{AF3D4815-3B3E-4C4F-9779-F82920C54E73}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Business", "Estoque.Business\Estoque.Business.csproj", "{D51C6C2E-E576-4211-8088-3043C691DADF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Model", "Estoque.Model\Estoque.Model.csproj", "{3026A93A-FBBE-483F-80C1-3300E1DB1BBC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.DAL", "Estoque.DAL\Estoque.DAL.csproj", "{759BC28F-F468-4122-993C-B8ADC5992735}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,36 +13,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{92081B49-827C-4D02-951B-80CB1ABBD1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{92081B49-827C-4D02-951B-80CB1ABBD1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{92081B49-827C-4D02-951B-80CB1ABBD1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{92081B49-827C-4D02-951B-80CB1ABBD1BC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A6EDF2B-0E31-489B-A4CD-26B4C2E3328F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A6EDF2B-0E31-489B-A4CD-26B4C2E3328F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A6EDF2B-0E31-489B-A4CD-26B4C2E3328F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A6EDF2B-0E31-489B-A4CD-26B4C2E3328F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AF3D4815-3B3E-4C4F-9779-F82920C54E73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AF3D4815-3B3E-4C4F-9779-F82920C54E73}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AF3D4815-3B3E-4C4F-9779-F82920C54E73}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AF3D4815-3B3E-4C4F-9779-F82920C54E73}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D51C6C2E-E576-4211-8088-3043C691DADF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D51C6C2E-E576-4211-8088-3043C691DADF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D51C6C2E-E576-4211-8088-3043C691DADF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D51C6C2E-E576-4211-8088-3043C691DADF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3026A93A-FBBE-483F-80C1-3300E1DB1BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3026A93A-FBBE-483F-80C1-3300E1DB1BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3026A93A-FBBE-483F-80C1-3300E1DB1BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3026A93A-FBBE-483F-80C1-3300E1DB1BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6823476-B21A-4FC1-B98B-357C2EC205E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6823476-B21A-4FC1-B98B-357C2EC205E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6823476-B21A-4FC1-B98B-357C2EC205E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6823476-B21A-4FC1-B98B-357C2EC205E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{759BC28F-F468-4122-993C-B8ADC5992735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{759BC28F-F468-4122-993C-B8ADC5992735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{759BC28F-F468-4122-993C-B8ADC5992735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{759BC28F-F468-4122-993C-B8ADC5992735}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{92081B49-827C-4D02-951B-80CB1ABBD1BC} = {3EF6A3A7-EC68-4707-B940-B11B89799A34}
-		{9A6EDF2B-0E31-489B-A4CD-26B4C2E3328F} = {E10AD85A-86BF-4434-A4CD-12849A4528CC}
-		{AF3D4815-3B3E-4C4F-9779-F82920C54E73} = {E10AD85A-86BF-4434-A4CD-12849A4528CC}
-		{D51C6C2E-E576-4211-8088-3043C691DADF} = {E10AD85A-86BF-4434-A4CD-12849A4528CC}
-		{3026A93A-FBBE-483F-80C1-3300E1DB1BBC} = {E10AD85A-86BF-4434-A4CD-12849A4528CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD0C1028-A867-43A9-8B13-FCEE19343FB8}
