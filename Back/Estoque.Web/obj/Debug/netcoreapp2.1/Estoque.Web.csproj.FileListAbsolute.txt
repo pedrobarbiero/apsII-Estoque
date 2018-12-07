@@ -1,3 +1,38 @@
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.Web.deps.json
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.Web.runtimeconfig.json
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.Web.runtimeconfig.dev.json
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.Web.dll
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.Web.pdb
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.Web.Views.dll
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.Web.Views.pdb
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.DAL.dll
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.DAL.pdb
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.csprojAssemblyReference.cache
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.csproj.CoreCompileInputs.cache
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.RazorAssemblyInfo.cache
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.RazorAssemblyInfo.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.AssemblyInfoInputs.cache
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.AssemblyInfo.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.TagHelpers.input.cache
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.TagHelpers.output.cache
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.RazorCoreGenerate.cache
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\Teste\Index.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.g.cshtml.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.RazorTargetAssemblyInfo.cache
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.RazorTargetAssemblyInfo.cs
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.Views.pdb
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.csproj.CopyComplete
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.dll
+D:\TESTE -ASDFASDFL\apsII-Estoque-master\Back\Estoque.Web\obj\Debug\netcoreapp2.1\Estoque.Web.pdb
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.Web.deps.json
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.Web.runtimeconfig.json
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.Web\bin\Debug\netcoreapp2.1\Estoque.Web.runtimeconfig.dev.json

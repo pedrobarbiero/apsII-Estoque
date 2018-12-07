@@ -9,7 +9,6 @@ namespace Estoque.DAL.Context
 
         public TesteContext(DbContextOptions<TesteContext> options) : base(options)
         {
-
         }
     }
 }
