@@ -1,32 +1,34 @@
 ﻿using Estoque.DAL.Context;
 using Estoque.DAL.Entities;
 using Estoque.DAL.InterfacesRepository;
+using System.Threading.Tasks;
 
 namespace Estoque.DAL.Repositories
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly TesteContext _context;
-        public UnitOfWork(TesteContext context)
+        private readonly EstoqueContext _context;
+        public UnitOfWork(EstoqueContext context)
         {
             _context = context;
-            TesteDetalhes = new TesteDetalheRepository(_context);
-            Testes = new TesteRepository(_context);
+            PessoaRepository = new PessoaRepository(_context);
         }
 
-        public ITesteDetalheRepository TesteDetalhes { get; private set; }
-        public ITesteRepository Testes { get; private set; }
-
-
-
+        public IPessoaRepository PessoaRepository { get; private set; }
         public void Dispose()
         {
             _context.Dispose();
         }
 
         public int SaveChanges()
-        {
-           return _context.SaveChanges();
+        {       
+            return _context.SaveChanges();
         }
+
+        public Task<int> SaveChangesAsync()
+        {
+            return _context.SaveChangesAsync();
+        }     
+
     }
 }

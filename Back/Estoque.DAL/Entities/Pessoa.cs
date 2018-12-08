@@ -1,8 +1,7 @@
 ﻿namespace Estoque.DAL.Entities
 {
-    public class Teste: Entity
+    public class Pessoa: Entity
     {
-        public int Numero { get; set; }
         public string Nome { get; set; }
     }
 }

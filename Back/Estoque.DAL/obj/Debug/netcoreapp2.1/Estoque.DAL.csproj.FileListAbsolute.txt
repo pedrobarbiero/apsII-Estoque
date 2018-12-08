@@ -1,9 +1,11 @@
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\bin\Debug\netcoreapp2.1\Estoque.DAL.deps.json
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\bin\Debug\netcoreapp2.1\Estoque.DAL.dll
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\bin\Debug\netcoreapp2.1\Estoque.DAL.pdb
+D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.dll
+D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\bin\Debug\netcoreapp2.1\Microsoft.EntityFrameworkCore.xml
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\obj\Debug\netcoreapp2.1\Estoque.DAL.csproj.CoreCompileInputs.cache
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\obj\Debug\netcoreapp2.1\Estoque.DAL.AssemblyInfoInputs.cache
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\obj\Debug\netcoreapp2.1\Estoque.DAL.AssemblyInfo.cs
+D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\obj\Debug\netcoreapp2.1\Estoque.DAL.csproj.CopyComplete
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\obj\Debug\netcoreapp2.1\Estoque.DAL.dll
 D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\obj\Debug\netcoreapp2.1\Estoque.DAL.pdb
-D:\APS2 - Estoque\apsII-Estoque\Back\Estoque.DAL\obj\Debug\netcoreapp2.1\Estoque.DAL.csprojAssemblyReference.cache

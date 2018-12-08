@@ -1,13 +1,14 @@
 ﻿using Estoque.DAL.Entities;
 using System;
+using System.Threading.Tasks;
 
 namespace Estoque.DAL.InterfacesRepository
 {
     public interface IUnitOfWork : IDisposable
-    {
-        ITesteDetalheRepository TesteDetalhes { get; }
-        ITesteRepository Testes { get; }
-
+    {        
+        IPessoaRepository PessoaRepository { get; }
         int SaveChanges();
+
+        Task<int> SaveChangesAsync();        
     }
 }

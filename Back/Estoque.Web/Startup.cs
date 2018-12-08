@@ -35,7 +35,13 @@ namespace Estoque.Web
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-            services.AddDbContext<TesteContext>(options => options.UseSqlServer(Configuration.GetConnectionString("EstoqueConnection")));
+            services.AddDbContext<EstoqueContext>(
+               options =>
+               {
+                   options.UseSqlServer(Configuration["ConnectionStrings:EstoqueConnection"], 
+                       b => b.MigrationsAssembly("Estoque.Web"));
+                   //options.UseOpenIddict();
+               });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
@@ -67,9 +73,7 @@ namespace Estoque.Web
             });
 
             using (var scope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
-            {
-                scope.ServiceProvider.GetRequiredService<TesteContext>().Database.Migrate();
-            }
+                scope.ServiceProvider.GetRequiredService<EstoqueContext>().Database.Migrate();
         }
     }
 }

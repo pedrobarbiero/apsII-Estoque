@@ -1,18 +1,20 @@
 ﻿using Estoque.DAL.Entities;
+using Estoque.DAL.InterfacesRepository;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace Estoque.DAL.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
     {
-
         protected readonly DbContext Context;
         private DbSet<TEntity> _dbSet;
-        protected IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> predicate) {
+        protected IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> predicate)
+        {
             if (predicate != null)
                 return _dbSet.Where(predicate);
             else
@@ -45,7 +47,7 @@ namespace Estoque.DAL.Repositories
             _dbSet.AddRange(entities);
         }
 
-        public TEntity Find(ulong id)
+        public TEntity Find(long id)
         {
             return Query(null).FirstOrDefault(t => t.Id == id);
         }
@@ -64,7 +66,7 @@ namespace Estoque.DAL.Repositories
         {
             _dbSet.Remove(entity);
         }
-        
+
         public void RemoveEntities(IEnumerable<TEntity> entities)
         {
             _dbSet.RemoveRange(entities);
@@ -76,12 +78,33 @@ namespace Estoque.DAL.Repositories
             Context.Entry(entity).State = EntityState.Modified;
         }
 
-        public void Remove(ulong id)
+        public void Remove(long id)
         {
             var entity = (TEntity)Activator.CreateInstance(typeof(TEntity));
             (entity as TEntity).Id = id;
             _dbSet.Attach(entity);
             _dbSet.Remove(entity);
         }
+
+        public Task<List<TEntity>> ToListAsync()
+        {         
+            return _dbSet.ToListAsync<TEntity>();
+        }
+
+        public Task<Entity> FirstOrDefaultAsync(Expression<Func<Entity, bool>> predicate)
+        {
+            return _dbSet.FirstOrDefaultAsync(predicate);
+        }
+
+        public Task<TEntity> FindAsync(long? id)
+        {
+            return _dbSet.FindAsync(id);
+        }
+
+        public Type Classe()
+        {
+            return typeof(TEntity);
+        }
+
     }
 }
