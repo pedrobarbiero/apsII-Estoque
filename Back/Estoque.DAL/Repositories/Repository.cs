@@ -39,7 +39,7 @@ namespace Estoque.DAL.Repositories
 
         public void Add(TEntity entity)
         {
-            _dbSet.Add(entity);
+            _dbSet.Add(entity); 
         }
 
         public void AddRange(IEnumerable<TEntity> entities)
