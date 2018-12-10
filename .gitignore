@@ -20,6 +20,8 @@ project.lock.json
 *.user
 *.userosscache
 *.sln.docstates
+*.dll
+*.pdb
 
 # Build results
 [Dd]ebug/
@@ -37,7 +39,7 @@ msbuild.err
 msbuild.wrn
 
 # Visual Studio 2017
-back/.vs/
+.vs/
 
 
 
