@@ -21,8 +21,7 @@ namespace Estoque.Web.Controllers
 
         public async Task<IActionResult> Index()
         {
-            var a = await _repository.ToListAsync();
-            return View(a);
+            return View(await _repository.ToListAsync());
         }
 
         public async Task<IActionResult> Details(long? id)

@@ -88,7 +88,7 @@ namespace Estoque.DAL.Repositories
 
         public Task<List<TEntity>> ToListAsync()
         {         
-            return _dbSet.ToListAsync<TEntity>();
+            return _dbSet.ToListAsync();
         }
 
         public Task<Entity> FirstOrDefaultAsync(Expression<Func<Entity, bool>> predicate)
