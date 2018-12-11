@@ -10,7 +10,7 @@ namespace Estoque.DAL.Context
         public DbSet<Estado> Estados { get; set; }
 
         public EstoqueContext(DbContextOptions<EstoqueContext> options) : base(options)
-        {
+        { ///TODO validações
         }
     }
 }
