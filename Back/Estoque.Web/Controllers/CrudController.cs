@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Estoque.Web.Controllers
 {
-    public class CrudController<T, E> : Controller
+    public class CrudController<T, E> : Controller //asdf
         where T : Repository<E>
         where E : Entity
     {
