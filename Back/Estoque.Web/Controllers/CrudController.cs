@@ -19,7 +19,7 @@ namespace Estoque.Web.Controllers
             _uow = unitOfWork;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index()//MOSTRANDO PRO ERIK
         {
             return View(await _repository.ToListAsync());
         }
