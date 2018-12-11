@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Web", "Estoque.Web\Estoque.Web.csproj", "{555604D6-BE99-4313-A2F4-A6F9400F4413}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estoque.Web", "Estoque.Web\Estoque.Web.csproj", "{555604D6-BE99-4313-A2F4-A6F9400F4413}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.DAL", "Estoque.DAL\Estoque.DAL.csproj", "{BD590D7B-F771-46E9-9F8B-9A8D154390EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estoque.DAL", "Estoque.DAL\Estoque.DAL.csproj", "{BD590D7B-F771-46E9-9F8B-9A8D154390EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

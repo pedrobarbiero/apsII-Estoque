@@ -22,6 +22,7 @@ project.lock.json
 *.sln.docstates
 *.dll
 *.pdb
+*.ide-wal
 
 # Build results
 [Dd]ebug/
