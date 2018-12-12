@@ -12,14 +12,14 @@ namespace Estoque.Web.Controllers
         where E : Entity
     {
         protected IRepository<E> _repository;
-        protected IUnitOfWork _uow;
+        protected IUnitOfWork _uow; //TESTANDO PRA VER SE APRENDI
 
         public CrudController(IUnitOfWork unitOfWork)
         {
             _uow = unitOfWork;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index()//MOSTRANDO PRO ERIK
         {
             return View(await _repository.ToListAsync());
         }
