@@ -8,8 +8,8 @@ namespace Estoque.DAL.Entities
 
         public long EstadoId { get; set; }
 
-        public virtual ICollection<Pessoa> Pessoas { get; set; }
-
         public virtual Estado Estado { get; set; }
+
+        public virtual ICollection<Pessoa> Pessoas { get; set; }
     }
 }
