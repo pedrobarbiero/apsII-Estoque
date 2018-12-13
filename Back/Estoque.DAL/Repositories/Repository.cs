@@ -3,7 +3,6 @@ using Estoque.DAL.InterfacesRepository;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
@@ -14,7 +13,7 @@ namespace Estoque.DAL.Repositories
     {
         protected readonly DbContext Context;
         private DbSet<TEntity> _dbSet;
-        protected virtual IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> predicate)
+        protected IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> predicate)
         {
             if (predicate != null)
                 return _dbSet.Where(predicate);
@@ -38,12 +37,9 @@ namespace Estoque.DAL.Repositories
             return Query(predicate).Any(predicate);
         }
 
-        public virtual IEnumerable<ValidationResult> Add(TEntity entity)
+        public void Add(TEntity entity)
         {
-            var validation = Validade(entity);
-            if (!validation.Any())
-                _dbSet.Add(entity);
-            return validation;
+            _dbSet.Add(entity);
         }
 
         public void AddRange(IEnumerable<TEntity> entities)
@@ -76,15 +72,10 @@ namespace Estoque.DAL.Repositories
             _dbSet.RemoveRange(entities);
         }
 
-        public IEnumerable<ValidationResult> Update(TEntity entity)
+        public void Update(TEntity entity)
         {
-            var validation = Validade(entity);
-            if (!validation.Any())
-            {
-                _dbSet.Attach(entity);
-                Context.Entry(entity).State = EntityState.Modified;
-            }
-            return validation;
+            _dbSet.Attach(entity);
+            Context.Entry(entity).State = EntityState.Modified;
         }
 
         public void Remove(long id)
@@ -96,7 +87,7 @@ namespace Estoque.DAL.Repositories
         }
 
         public Task<List<TEntity>> ToListAsync()
-        {
+        {         
             return _dbSet.ToListAsync();
         }
 
@@ -110,12 +101,9 @@ namespace Estoque.DAL.Repositories
             return _dbSet.FindAsync(id);
         }
 
-        public virtual IEnumerable<ValidationResult> Validade(TEntity obj)
+        public Type Classe()
         {
-            var resultValidate = new List<ValidationResult>();
-            var validationContext = new ValidationContext(obj, null, null);
-            Validator.TryValidateObject(obj, validationContext, resultValidate, true);
-            return resultValidate;
+            return typeof(TEntity);
         }
 
     }
