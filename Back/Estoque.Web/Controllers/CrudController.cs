@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace Estoque.Web.Controllers
 {
-    public class CrudController<T, E> : Controller //asdf
+    public class CrudController<T, E> : Controller 
         where T : Repository<E>
         where E : Entity
     {
         protected IRepository<E> _repository;
-        protected IUnitOfWork _uow; //TESTANDO PRA VER SE APRENDI
+        protected IUnitOfWork _uow; 
 
         public CrudController(IUnitOfWork unitOfWork)
         {
             _uow = unitOfWork;
         }
 
-        public async Task<IActionResult> Index()//MOSTRANDO PRO ERIK
+        public async Task<IActionResult> Index()
         {
             return View(await _repository.ToListAsync());
         }
@@ -68,7 +68,7 @@ namespace Estoque.Web.Controllers
             var entity = await _repository.FindAsync(id);
             if (entity == null)
             {
-                return NotFound(); //TESTE
+                return NotFound(); 
             }
             return View(entity);
         }
