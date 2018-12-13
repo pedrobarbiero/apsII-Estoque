@@ -2,7 +2,7 @@
 
 namespace Estoque.DAL.Entities
 {
-     public class Cidade : Entity ///
+     public class Cidade : Entity 
     {
         public string Nome { get; set; }
 
