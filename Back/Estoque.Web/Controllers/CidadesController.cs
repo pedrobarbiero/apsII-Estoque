@@ -1,12 +1,14 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Estoque.DAL.Entities;
+using Estoque.DAL.InterfacesRepository;
+using Estoque.DAL.Repositories;
 
 namespace Estoque.Web.Controllers
 {
-    public class CidadesController : Controller
+    public class CidadesController : CrudController<CidadeRepository, Cidade>
     {
-        public IActionResult Index()
+        public CidadesController(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
-            return View();
+            _repository = _uow.CidadeRepository;
         }
     }
 }
