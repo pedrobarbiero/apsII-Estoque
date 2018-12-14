@@ -1,4 +1,5 @@
-﻿using Estoque.DAL.Entities;
+﻿using Common.Attributes;
+using Estoque.DAL.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -8,6 +9,7 @@ namespace Estoque.DAL.InterfacesRepository
 {
     public interface IRepository<TEntity> where TEntity : Entity
     {
+        IEnumerable<ToSelectListItem> CreateSelectList();
         Type Classe();
         TEntity Find(long id);
         IEnumerable<TEntity> Get();

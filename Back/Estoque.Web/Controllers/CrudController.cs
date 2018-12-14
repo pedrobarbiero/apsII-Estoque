@@ -3,6 +3,7 @@ using Estoque.DAL.InterfacesRepository;
 using Estoque.DAL.Repositories;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Threading.Tasks;
 
 namespace Estoque.Web.Controllers
@@ -13,6 +14,11 @@ namespace Estoque.Web.Controllers
     {
         protected IRepository<E> _repository;
         protected IUnitOfWork _uow; 
+
+        protected virtual void LoadDropdown(E entity)
+        {
+
+        }
 
         public CrudController(IUnitOfWork unitOfWork)
         {
@@ -42,6 +48,7 @@ namespace Estoque.Web.Controllers
 
         public IActionResult Create()
         {
+            LoadDropdown((E)Activator.CreateInstance(typeof(E)));
             return View();
         }
 
@@ -55,6 +62,7 @@ namespace Estoque.Web.Controllers
                 await _uow.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            LoadDropdown(entity);
             return View(entity);
         }
 
@@ -70,6 +78,7 @@ namespace Estoque.Web.Controllers
             {
                 return NotFound(); 
             }
+            LoadDropdown(entity);
             return View(entity);
         }
 
@@ -97,6 +106,7 @@ namespace Estoque.Web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+            LoadDropdown(entity);
             return View(entity);
         }
 
