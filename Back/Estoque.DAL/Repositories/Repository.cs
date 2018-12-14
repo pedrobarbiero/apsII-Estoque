@@ -1,4 +1,6 @@
-﻿using Estoque.DAL.Entities;
+﻿using Common;
+using Common.Attributes;
+using Estoque.DAL.Entities;
 using Estoque.DAL.InterfacesRepository;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -104,6 +106,18 @@ namespace Estoque.DAL.Repositories
         public Type Classe()
         {
             return typeof(TEntity);
+        }
+
+        public IEnumerable<ToSelectListItem> CreateSelectList()
+        {
+            var tipo = typeof(TEntity);
+            var textField = AttributesUtil.GetTextField(tipo);
+            return _dbSet
+                   .Select(x => new ToSelectListItem()
+                   {
+                       Value = x.Id.ToString(),
+                       Text = textField.GetValue(x).ToString()
+                   }).ToList();
         }
 
     }
