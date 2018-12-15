@@ -1,6 +1,9 @@
 ﻿using Estoque.DAL.Entities;
 using Estoque.DAL.InterfacesRepository;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace Estoque.DAL.Repositories
 {
@@ -9,5 +12,12 @@ namespace Estoque.DAL.Repositories
         public EstadoRepository(DbContext context) : base(context)
         {
         }
+
+        protected override IQueryable<Estado> Query(Expression<Func<Estado, bool>> predicate)
+        {
+            var query = base.Query(predicate);
+            return query.Include(t => t.Pais);
+        }
+        
     }
 }

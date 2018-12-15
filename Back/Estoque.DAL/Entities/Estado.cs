@@ -7,7 +7,9 @@ namespace Estoque.DAL.Entities
     {
         [TextField]
         public string Nome { get; set; }
+        public long PaisId { get; set; }
 
         public virtual ICollection<Cidade> Cidades { get; set; }
+        public virtual Pais Pais { get; set; }
     }
 }

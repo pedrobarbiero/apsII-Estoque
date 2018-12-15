@@ -1,5 +1,4 @@
-﻿using Estoque.DAL.Repositories;
-using System;
+﻿using System;
 using System.Threading.Tasks;
 
 namespace Estoque.DAL.InterfacesRepository
@@ -9,6 +8,7 @@ namespace Estoque.DAL.InterfacesRepository
         IPessoaRepository PessoaRepository { get; }
         ICidadeRepository CidadeRepository { get; }
         IEstadoRepository EstadoRepository { get; }
+        IPaisRepository PaisRepository { get; }
 
         int SaveChanges();
 
