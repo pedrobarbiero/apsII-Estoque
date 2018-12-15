@@ -15,7 +15,7 @@ namespace Estoque.DAL.Repositories
     {
         protected readonly DbContext Context;
         private DbSet<TEntity> _dbSet;
-        protected IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> predicate)
+        protected virtual IQueryable<TEntity> Query(Expression<Func<TEntity, bool>> predicate)
         {
             if (predicate != null)
                 return _dbSet.Where(predicate);
@@ -90,17 +90,17 @@ namespace Estoque.DAL.Repositories
 
         public Task<List<TEntity>> ToListAsync()
         {         
-            return _dbSet.ToListAsync();
+            return Query(null).ToListAsync();
         }
 
         public Task<Entity> FirstOrDefaultAsync(Expression<Func<Entity, bool>> predicate)
         {
-            return _dbSet.FirstOrDefaultAsync(predicate);
+            return Query(null).FirstOrDefaultAsync(predicate);
         }
 
         public Task<TEntity> FindAsync(long? id)
         {
-            return _dbSet.FindAsync(id);
+            return Query(null).FirstOrDefaultAsync(t => t.Id == id);
         }
 
         public Type Classe()
@@ -112,12 +112,14 @@ namespace Estoque.DAL.Repositories
         {
             var tipo = typeof(TEntity);
             var textField = AttributesUtil.GetTextField(tipo);
-            return _dbSet
+            var a = _dbSet
                    .Select(x => new ToSelectListItem()
                    {
                        Value = x.Id.ToString(),
                        Text = textField.GetValue(x).ToString()
                    }).ToList();
+
+            return a;
         }
 
     }

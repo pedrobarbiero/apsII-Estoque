@@ -1,4 +1,4 @@
-﻿@model Estoque.DAL.Entities.Pessoa
+﻿@model Estoque.DAL.Entities.Estado
 
 @{
     ViewData["Title"] = "Details";
@@ -7,7 +7,7 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Pessoa</h4>
+    <h4>Estado</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
@@ -15,6 +15,12 @@
         </dt>
         <dd>
             @Html.DisplayFor(model => model.Nome)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Pais)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Pais.Id)
         </dd>
     </dl>
 </div>
