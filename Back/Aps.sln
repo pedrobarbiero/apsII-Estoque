@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estoque.Web", "Estoque.Web\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estoque.DAL", "Estoque.DAL\Estoque.DAL.csproj", "{BD590D7B-F771-46E9-9F8B-9A8D154390EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{76EA4CE1-B5AD-4291-B4E3-BEF1E6F2B8CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BD590D7B-F771-46E9-9F8B-9A8D154390EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD590D7B-F771-46E9-9F8B-9A8D154390EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD590D7B-F771-46E9-9F8B-9A8D154390EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76EA4CE1-B5AD-4291-B4E3-BEF1E6F2B8CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76EA4CE1-B5AD-4291-B4E3-BEF1E6F2B8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76EA4CE1-B5AD-4291-B4E3-BEF1E6F2B8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76EA4CE1-B5AD-4291-B4E3-BEF1E6F2B8CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -9,6 +9,9 @@ namespace Estoque.Web.Controllers
         public PessoasController(IUnitOfWork unitOfWork) : base(unitOfWork)
         {
             _repository = _uow.PessoaRepository;
+            //EXEMPLO DE USO 
+            //var a = _uow.EstadoRepository.CreateSelectList();
+            //var b = new SelectList(a, 1);
         }
     }
 }
