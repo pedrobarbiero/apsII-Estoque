@@ -10,6 +10,9 @@ namespace Estoque.DAL.Context
         public DbSet<Estado> Estados { get; set; }
         public DbSet<Pais> Paises { get; set; }
         public DbSet<Endereco> Enderecos{ get; set; }
+        public DbSet<Telefone> Telefones { get; set; }
+        public DbSet<PessoaFisica> PessoasFisicas { get; set; }
+        public DbSet<PessoaJuridica> PessoasJuridicas { get; set; }
 
         public EstoqueContext(DbContextOptions<EstoqueContext> options) : base(options)
         {

@@ -1,8 +1,6 @@
 ﻿using Estoque.DAL.Entities;
 using Estoque.DAL.InterfacesRepository;
 using Estoque.DAL.Repositories;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace Estoque.Web.Controllers
 {
@@ -12,6 +10,10 @@ namespace Estoque.Web.Controllers
         {
             _repository = _uow.PessoaRepository;
         }
-               
+        protected override void LoadDropdown(Pessoa entity)
+        {
+            ViewBag.EnderecoId = _uow.EnderecoRepository.CreateSelectList(entity.EnderecoId);
+        }
+
     }
 }
