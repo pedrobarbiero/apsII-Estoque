@@ -9,6 +9,7 @@ namespace Estoque.DAL.InterfacesRepository
         ICidadeRepository CidadeRepository { get; }
         IEstadoRepository EstadoRepository { get; }
         IPaisRepository PaisRepository { get; }
+        IEnderecoRepository EnderecoRepository { get; }
 
         int SaveChanges();
 

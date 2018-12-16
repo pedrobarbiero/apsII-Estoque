@@ -1,7 +1,7 @@
 ﻿using Common;
-using Common.Attributes;
 using Estoque.DAL.Entities;
 using Estoque.DAL.InterfacesRepository;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -89,7 +89,7 @@ namespace Estoque.DAL.Repositories
         }
 
         public Task<List<TEntity>> ToListAsync()
-        {         
+        {
             return Query(null).ToListAsync();
         }
 
@@ -108,19 +108,17 @@ namespace Estoque.DAL.Repositories
             return typeof(TEntity);
         }
 
-        public IEnumerable<ToSelectListItem> CreateSelectList()
+        public SelectList CreateSelectList(long id)
         {
-            var tipo = typeof(TEntity);
-            var textField = AttributesUtil.GetTextField(tipo);
-            var a = _dbSet
-                   .Select(x => new ToSelectListItem()
-                   {
-                       Value = x.Id.ToString(),
-                       Text = textField.GetValue(x).ToString()
-                   }).ToList();
+            var type = typeof(TEntity);
+            var textField = AttributesUtil.GetTextField(type);
+            var list = _dbSet.Select(x => new
+                SelectListItem(x.Id.ToString(),
+                textField.GetValue(x).ToString(),
+                x.Id == id)
+            ).ToList();
+            return new SelectList(list, "Text", "Value");
+        }        
 
-            return a;
         }
-
-    }
 }

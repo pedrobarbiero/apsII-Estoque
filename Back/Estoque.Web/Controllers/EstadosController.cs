@@ -13,9 +13,7 @@ namespace Estoque.Web.Controllers
         }
         protected override void LoadDropdown(Estado entity)
         {
-            var a = _uow.PaisRepository.CreateSelectList();
-            var b = new SelectList(a,"Value", "Text", entity.PaisId);
-            ViewBag.PaisId = b;
+            ViewBag.PaisId = _uow.PaisRepository.CreateSelectList(entity.PaisId);
         }
     }
 }

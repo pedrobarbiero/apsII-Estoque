@@ -1,9 +1,9 @@
 ﻿namespace Common.Attributes
 {
-    public class ToSelectListItem
+    public class ToSelectList
     {
         public string Value { get; set; }
-        public string Text { get; set; }
+        public string Text { get; set; }    
         
     }
 }
