@@ -1,4 +1,5 @@
 ﻿using Common.Attributes;
+using System.Collections.Generic;
 
 namespace Estoque.DAL.Entities
 {
@@ -10,5 +11,6 @@ namespace Estoque.DAL.Entities
         public long EstadoId { get; set; }
 
         public virtual Estado Estado { get; set; }        
+        public virtual ICollection<Endereco> Enderecos { get; set; }
     }
 }

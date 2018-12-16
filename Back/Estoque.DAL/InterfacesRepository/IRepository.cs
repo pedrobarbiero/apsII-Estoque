@@ -1,5 +1,5 @@
-﻿using Common.Attributes;
-using Estoque.DAL.Entities;
+﻿using Estoque.DAL.Entities;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
@@ -9,7 +9,7 @@ namespace Estoque.DAL.InterfacesRepository
 {
     public interface IRepository<TEntity> where TEntity : Entity
     {
-        IEnumerable<ToSelectListItem> CreateSelectList();
+        SelectList CreateSelectList(long id);
         Type Classe();
         TEntity Find(long id);
         IEnumerable<TEntity> Get();

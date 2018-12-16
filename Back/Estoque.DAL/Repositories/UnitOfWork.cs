@@ -16,11 +16,13 @@ namespace Estoque.DAL.Repositories
             CidadeRepository = new CidadeRepository(_context);
             EstadoRepository = new EstadoRepository(_context);
             PaisRepository = new PaisRepository(_context);
+            EnderecoRepository = new EnderecoRepository(_context);
         }
         public IPessoaRepository PessoaRepository { get; private set; }
         public ICidadeRepository CidadeRepository { get; private set; }        
         public IEstadoRepository EstadoRepository { get; private set; }
         public IPaisRepository PaisRepository { get; private set; }
+        public IEnderecoRepository EnderecoRepository { get; private set; }
 
         public void Dispose()
         {
