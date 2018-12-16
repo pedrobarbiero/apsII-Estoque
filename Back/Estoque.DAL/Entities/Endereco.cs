@@ -1,4 +1,5 @@
-﻿using Estoque.DAL.Entities.Enums;
+﻿using Common.Attributes;
+using Estoque.DAL.Entities.Enums;
 
 namespace Estoque.DAL.Entities
 {
@@ -10,7 +11,9 @@ namespace Estoque.DAL.Entities
         public string Cep { get; set; }
         public string Numero { get; set; }
         public int CidadeId { get; set; }
-        public virtual Cidade Cidade { get; set; }
+        public virtual Cidade Cidade { get; set; }        
+        [TextField]
+        public string Descricao { get { return $"{Logradouro}, {Bairro}, {Numero}"; } }
 
     }
 }
