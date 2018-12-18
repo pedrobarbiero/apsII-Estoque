@@ -1,5 +1,14 @@
 ﻿@model IEnumerable<Estoque.DAL.Entities.Pais>
 @{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+@{
     ViewData["Title"] = "Consulta";
     ViewData["Formulario"] = "Países";
     ViewData["Acao"] = "Consulta";
@@ -19,6 +28,7 @@
         </tr>
     </thead>
     <tbody>
+
         @foreach (var item in Model)
         {
             <tr>
