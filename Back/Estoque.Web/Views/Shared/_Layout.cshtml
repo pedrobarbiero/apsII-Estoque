@@ -1,9 +1,17 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="pt-br">
+<!--<![endif]-->
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Estoque.Web</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>@ViewData["Title"] - Self Stock</title>
+    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     <environment include="Development">
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
@@ -12,41 +20,176 @@
     <environment exclude="Development">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+              asp-fallback-test-class="sr-only" asp-fallback²-test-property="position" asp-fallback-test-value="absolute" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
+
+    <link rel="apple-touch-icon" href="~/images/shortcut.png">
+    <link rel="shortcut icon" href="~/images/shortcut.png">
+
+    <link rel="stylesheet" href="~/css/site/normalize.min.css">
+    <link rel="stylesheet" href="~/css/site/bootstrap.min.css">
+
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="~/css/site/themify-icons.css">
+    <link rel="stylesheet" href="~/css/site/pe-icon-7-stroke.min.css">
+
+    <link rel="stylesheet" href="~/css/site/flag-icon.min.css">
+    <link rel="stylesheet" href="~/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="~/css/style.css">
+
+    <link href="~/css/site/chartist.min.css" rel="stylesheet">
+    <link href="~/css/site/jqvmap.min.css" rel="stylesheet">
+
+    <link href="~/css/site/weather-icons.css" rel="stylesheet" />
+    <link href="~/css/site/fullcalendar.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pixeden-stroke-7-icon@1.2.3/pe-icon-7-stroke/dist/pe-icon-7-stroke.min.css">
+
 </head>
+
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-area="" asp-controller="Home" asp-action="Index" class="navbar-brand">Estoque.Web</a>
-            </div>
-            <div class="navbar-collapse collapse">
+    <!-- Left Panel -->
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="About">About</a></li>
-                    <li><a asp-area="" asp-controller="Home" asp-action="Contact">ASLKDJF</a></li>
+                    <li class="active">
+                    <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="menu-icon fa fa-laptop"></i> INÍCIO</a></li>
+                    <li class="menu-title">Menu</li><!-- /.menu-title -->
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-shopping-cart"></i>Estoque</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-ticket"></i><a href="#">Produto</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tags"></i>Fiscal</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-tag"></i><a href="#">Nota fiscal</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-dollar"></i>Financeiro</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-archive"></i><a href="#">Vendas a prazo</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-id-card-o"></i>Manipuladores</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="fa fa-users"></i><a href="#">Usuário</a></li>
+                            <li><i class="fa fa-users"></i><a href="#">Cliente</a></li>
+                            <li><i class="fa fa-users"></i><a href="#">Fornecedor</a></li>
+                            <li><i class="fa fa-users"></i><a href="#">Funcionário</a></li>
+                            <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Paises" asp-action="Index">Pais</a></li>
+                            <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Estados" asp-action="Index">Estado</a></li>
+                            <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Cidades" asp-action="Index">Cidade</a></li>
+                            <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Endereco" asp-action="Index">Endereço</a></li>
+                            <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Telefone" asp-action="Index">Telefone</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-title">Configurações</li><!-- /.menu-title -->
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-gears"></i>Conta</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-user"></i><a href="#">Conta</a></li>
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="#">Bloquear</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item-has-children dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-info"></i>Aplicação</a>
+                        <ul class="sub-menu children dropdown-menu">
+                            <li><i class="menu-icon fa fa-sign-in"></i><a href="#">Informações</a></li>
+                            <li><i class="menu-icon fa fa-info-circle"></i><a href="#">Wiki</a></li>
+                            <li><i class="menu-icon fa fa-comments-o"></i><a href="#">Suporte</a></li>
+                            <li><i class="menu-icon fa fa-circle-o"></i><a href="#">Versão 1.0</a></li>
+                        </ul>
+                    </li>
                 </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="top-left">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#"><img src="~/images/logo.png" alt="Logo"></a>
+                    <a class="navbar-brand hidden" href="#"><img src="~/images/logo2.png" alt="Logo"></a>
+                    <a id="menuToggle" class="menutoggle"><i class="fa fa-bars"></i></a>
+                </div>
+            </div>
+            <div class="top-right">
+                <div class="header-menu">
+                    <div class="user-area dropdown float-right">
+                        <a href="#" class="dropdown-toggle active" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="user-avatar rounded-circle" src="~/images/admin.jpg" alt="User Avatar">
+                        </a>
+
+                        <div class="user-menu dropdown-menu">
+                            <a class="nav-link" href="#"><i class="fa fa-user"></i>Meu perfil</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-cog"></i>Configurações</a>
+
+                            <a class="nav-link" href="#"><i class="fa fa-power-off"></i>Sair</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- /#header -->
+        <!-- Breadcrumbs-->
+        <div class="breadcrumbs">
+            <div class="breadcrumbs-inner">
+                <div class="row m-0">
+                    <div class="col-sm-12">
+                        <div class="page-header">
+                            <div class="page-title">
+                                <ol class="breadcrumb text-right">
+                                    <li>@ViewData["Formulario"]</li>
+                                    <li class="active">@ViewData["Acao"]</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
-
-    <partial name="_CookieConsentPartial" />
-
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; 2018 - Estoque.Web</p>
-        </footer>
+        <!-- /.breadcrumbs-->
+        <!-- Content -->
+        <div class="content">
+            @RenderBody()
+        </div>
+        <!-- /.content -->
+        <div class="clearfix"></div>
     </div>
+    <!-- /#right-panel -->
+    <!-- Scripts -->
+    <script src="~/js/site/jquery.min.js"></script>
+    <script src="~/js/site/popper.min.js"></script>
+    <script src="~/js/site/bootstrap.min.js"></script>
+    <script src="~/js/site/jquery.matchHeight.min.js"></script>
+    <script src="~/js/main.js"></script>
+
+    <script src="~/js/site/Chart.bundle.min.js"></script>
+
+    <script src="~/js/site/chartist.min.js"></script>
+    <script src="~/js/site/chartist-plugin-legend.min.js"></script>
+
+    <script src="~/js/site/jquery.simpleWeather.min.js"></script>
+    <script src="~/js/init/weather-init.js"></script>
+
+    <script src="~/js/site/moment.min.js"></script>
+    <script src="~/js/site/fullcalendar.min.js"></script>
+    <script src="~/js/init/fullcalendar-init.js"></script>
 
     <environment include="Development">
         <script src="~/lib/jquery/dist/jquery.js"></script>
@@ -69,6 +212,201 @@
         <script src="~/js/site.min.js" asp-append-version="true"></script>
     </environment>
 
+
+    <!--Local Stuff
+    <script>
+        jQuery(document).ready(function($) {
+            "use strict";
+
+            // Pie chart flotPie1
+            var piedata = [
+                { label: "Desktop visits", data: [[1,32]], color: '#5c6bc0'},
+                { label: "Tab visits", data: [[1,33]], color: '#ef5350'},
+                { label: "Mobile visits", data: [[1,35]], color: '#66bb6a'}
+            ];
+
+            /*$.plot('#flotPie1', piedata, {
+                series: {
+                    pie: {
+                        show: true,
+                        radius: 1,
+                        innerRadius: 0.65,
+                        label: {
+                            show: true,
+                            radius: 2/3,
+                            threshold: 1
+                        },
+                        stroke: {
+                            width: 0
+                        }
+                    }
+                },
+                grid: {
+                    hoverable: true,
+                    clickable: true
+                }
+            }); JJ
+            // Pie chart flotPie1  End
+            // cellPaiChart
+            var cellPaiChart = [
+                { label: "Direct Sell", data: [[1,65]], color: '#5b83de'},
+                { label: "Channel Sell", data: [[1,35]], color: '#00bfa5'}
+            ];
+            $.plot('#cellPaiChart', cellPaiChart, {
+                series: {
+                    pie: {
+                        show: true,
+                        stroke: {
+                            width: 0
+                        }
+                    }
+                },
+                legend: {
+                    show: false
+                },grid: {
+                    hoverable: true,
+                    clickable: true
+                }
+
+            });
+
+
+            // cellPaiChart End
+            // Line Chart  #flotLine5
+            var newCust = [[0, 3], [1, 5], [2,4], [3, 7], [4, 9], [5, 3], [6, 6], [7, 4], [8, 10]];
+
+            var plot = $.plot($('#flotLine5'),[{
+                data: newCust,
+                label: 'New Data Flow',
+                color: '#fff'
+            }],
+            {
+                series: {
+                    lines: {
+                        show: true,
+                        lineColor: '#fff',
+                        lineWidth: 2
+                    },
+                    points: {
+                        show: true,
+                        fill: true,
+                        fillColor: "#ffffff",
+                        symbol: "circle",
+                        radius: 3
+                    },
+                    shadowSize: 0
+                },
+                points: {
+                    show: true,
+                },
+                legend: {
+                    show: false
+                },
+                grid: {
+                    show: false
+                }
+            });
+            // Line Chart  #flotLine5 End
+            // Traffic Chart using chartist
+            if ($('#traffic-chart').length) {
+                var chart = new Chartist.Line('#traffic-chart', {
+                  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
+                  series: [
+                  [0, 18000, 35000,  25000,  22000,  0],
+                  [0, 33000, 15000,  20000,  15000,  300],
+                  [0, 15000, 28000,  15000,  30000,  5000]
+                  ]
+              }, {
+                  low: 0,
+                  showArea: true,
+                  showLine: false,
+                  showPoint: false,
+                  fullWidth: true,
+                  axisX: {
+                    showGrid: true
+                }
+            });
+
+                chart.on('draw', function(data) {
+                    if(data.type === 'line' || data.type === 'area') {
+                        data.element.animate({
+                            d: {
+                                begin: 2000 * data.index,
+                                dur: 2000,
+                                from: data.path.clone().scale(1, 0).translate(0, data.chartRect.height()).stringify(),
+                                to: data.path.clone().stringify(),
+                                easing: Chartist.Svg.Easing.easeOutQuint
+                            }
+                        });
+                    }
+                });
+            }
+            // Traffic Chart using chartist End
+            //Traffic chart chart-js
+            if ($('#TrafficChart').length) {
+                var ctx = document.getElementById( "TrafficChart" );
+                ctx.height = 150;
+                var myChart = new Chart( ctx, {
+                    type: 'line',
+                    data: {
+                        labels: [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul" ],
+                        datasets: [
+                        {
+                            label: "Visit",
+                            borderColor: "rgba(4, 73, 203,.09)",
+                            borderWidth: "1",
+                            backgroundColor: "rgba(4, 73, 203,.5)",
+                            data: [ 0, 2900, 5000, 3300, 6000, 3250, 0 ]
+                        },
+                        {
+                            label: "Bounce",
+                            borderColor: "rgba(245, 23, 66, 0.9)",
+                            borderWidth: "1",
+                            backgroundColor: "rgba(245, 23, 66,.5)",
+                            pointHighlightStroke: "rgba(245, 23, 66,.5)",
+                            data: [ 0, 4200, 4500, 1600, 4200, 1500, 4000 ]
+                        },
+                        {
+                            label: "Targeted",
+                            borderColor: "rgba(40, 169, 46, 0.9)",
+                            borderWidth: "1",
+                            backgroundColor: "rgba(40, 169, 46, .5)",
+                            pointHighlightStroke: "rgba(40, 169, 46,.5)",
+                            data: [1000, 5200, 3600, 2600, 4200, 5300, 0 ]
+                        }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        tooltips: {
+                            mode: 'index',
+                            intersect: false
+                        },
+                        hover: {
+                            mode: 'nearest',
+                            intersect: true
+                        }
+
+                    }
+                } );
+            }
+            //Traffic chart chart-js  End
+            // Bar Chart #flotBarChart
+            $.plot("#flotBarChart", [{
+                data: [[0, 18], [2, 8], [4, 5], [6, 13],[8,5], [10,7],[12,4], [14,6],[16,15], [18, 9],[20,17], [22,7],[24,4], [26,9],[28,11]],
+                bars: {
+                    show: true,
+                    lineWidth: 0,
+                    fillColor: '#ffffff8a'
+                }
+            }], {
+                grid: {
+                    show: false
+                }
+            });
+            // Bar Chart #flotBarChart End
+        });
+    </script>-->
     @RenderSection("Scripts", required: false)
 </body>
 </html>
