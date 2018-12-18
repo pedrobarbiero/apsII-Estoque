@@ -1,7 +1,9 @@
 ﻿@model Estoque.DAL.Entities.Pais
 
 @{
-    ViewData["Title"] = "Delete";
+    ViewData["Title"] = "Consulta";
+    ViewData["Formulario"] = "Países";
+    ViewData["Acao"] = "Deletar";
 }
 
 <h2>Delete</h2>
@@ -18,7 +20,6 @@
             @Html.DisplayFor(model => model.Nome)
         </dd>
     </dl>
-    
     <form asp-action="Delete">
         <input type="hidden" asp-for="Id" />
         <input type="submit" value="Delete" class="btn btn-default" /> |
