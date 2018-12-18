@@ -6,12 +6,8 @@
     ViewData["Acao"] = "Editar";
 }
 
-<h2>Edit</h2>
-
-<h4>Pais</h4>
-<hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <form asp-action="Edit">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -21,15 +17,13 @@
             </div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
-                <input type="submit" value="Save" class="btn btn-default" />
+                <a class="btn btn-secondary" asp-action="Index"><i class="fa fa-arrow-left"></i>&nbsp; Voltar</a>
+                <button type="submit" class="btn btn-default pull-right"><i class="fa fa-plus"></i>&nbsp; Salvar</button>
             </div>
         </form>
     </div>
 </div>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}

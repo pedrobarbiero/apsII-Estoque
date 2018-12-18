@@ -6,21 +6,26 @@
     ViewData["Acao"] = "Detalhar";
 }
 
-<h2>Details</h2>
-
-<div>
-    <h4>Pais</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Nome)
-        </dt>
-        <dd>
-            @Html.DisplayFor(model => model.Nome)
-        </dd>
-    </dl>
-</div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
+<div class="col-lg-6">
+    <div class="card">
+        <div class="card-header">
+            <strong>Detalhe</strong>
+        </div>
+        <div class="card-body card-block">
+            <form action="#" method="post" class="form-horizontal">
+                <dl class="dl-horizontal">
+                    <dt>
+                        @Html.DisplayNameFor(model => model.Nome)
+                    </dt>
+                    <dd>
+                        @Html.DisplayFor(model => model.Nome)
+                    </dd>
+                </dl>
+            </form>
+        </div>
+        <div class="card-footer">
+            <a class="btn btn-secondary" asp-action="Index"><i class="fa fa-arrow-left"></i>&nbsp; Voltar</a> |
+            <a class="btn btn-secondary" asp-action="Edit" asp-route-id="@Model.Id"><i class="fa fa-pencil"></i>&nbsp; Editar</a>
+        </div>
+    </div>
 </div>

@@ -3,15 +3,11 @@
 @{
     ViewData["Title"] = "Consulta";
     ViewData["Formulario"] = "Países";
-    ViewData["Acao"] = "Create";
+    ViewData["Acao"] = "Adicionar";
 }
 
-<h2>Create</h2>
-
-<h4>Pais</h4>
-<hr />
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-12">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
@@ -20,14 +16,11 @@
                 <span asp-validation-for="Nome" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-default" />
+                <a class="btn btn-secondary" asp-action="Index"><i class="fa fa-arrow-left"></i>&nbsp; Voltar</a>
+                <button type="submit" class="btn btn-success pull-right"><i class="fa fa-plus"></i>&nbsp; Adicionar</button>
             </div>
         </form>
     </div>
-</div>
-
-<div>
-    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
