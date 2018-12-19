@@ -1,4 +1,4 @@
-﻿namespace Estoque.DAL.Entities
+﻿namespace Estoque.Enums
 {
     public enum Sexo
     {

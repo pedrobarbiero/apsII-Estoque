@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Estoque.Entities;
+using Estoque.Enums;
+using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Estoque.DAL.Entities
+namespace Estoque.Entities
 {
     public class PessoaFisica : Entity
     {

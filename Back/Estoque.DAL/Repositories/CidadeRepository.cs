@@ -1,9 +1,9 @@
-﻿using System;
+﻿using Estoque.DAL.InterfacesRepository;
+using Estoque.Entities;
+using Microsoft.EntityFrameworkCore;
+using System;
 using System.Linq;
 using System.Linq.Expressions;
-using Estoque.DAL.Entities;
-using Estoque.DAL.InterfacesRepository;
-using Microsoft.EntityFrameworkCore;
 
 namespace Estoque.DAL.Repositories
 {

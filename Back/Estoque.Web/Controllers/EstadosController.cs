@@ -1,7 +1,6 @@
-﻿using Estoque.DAL.Entities;
-using Estoque.DAL.InterfacesRepository;
+﻿using Estoque.DAL.InterfacesRepository;
 using Estoque.DAL.Repositories;
-using Microsoft.AspNetCore.Mvc.Rendering;
+using Estoque.Entities;
 
 namespace Estoque.Web.Controllers
 {

@@ -1,5 +1,5 @@
-﻿using Estoque.DAL.Entities;
-using Estoque.DAL.InterfacesRepository;
+﻿using Estoque.DAL.InterfacesRepository;
+using Estoque.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;

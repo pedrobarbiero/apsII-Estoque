@@ -1,5 +1,5 @@
 ﻿using Common;
-using Estoque.DAL.Entities;
+using Estoque.Entities;
 using Estoque.DAL.InterfacesRepository;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;

@@ -1,4 +1,4 @@
-﻿namespace Estoque.DAL.Entities.Enums
+﻿namespace Estoque.Enums
 {
     public enum CategoriaTelefone
     {

@@ -1,7 +1,8 @@
-﻿using Estoque.DAL.Entities.Enums;
+﻿using Estoque.Entities;
+using Estoque.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace Estoque.DAL.Entities
+namespace Estoque.Entities
 {
     public class Telefone:Entity
     {

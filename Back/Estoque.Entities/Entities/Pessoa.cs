@@ -1,8 +1,9 @@
 ﻿using Common.Attributes;
+using Estoque.Entities;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Estoque.DAL.Entities
+namespace Estoque.Entities
 {
     public class Pessoa: Entity
     {

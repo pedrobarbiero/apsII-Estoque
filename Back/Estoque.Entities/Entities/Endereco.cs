@@ -1,7 +1,8 @@
 ﻿using Common.Attributes;
-using Estoque.DAL.Entities.Enums;
+using Estoque.Entities;
+using Estoque.Enums;
 
-namespace Estoque.DAL.Entities
+namespace Estoque.Entities
 {
     public class Endereco: Entity
     {

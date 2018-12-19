@@ -1,4 +1,4 @@
-﻿using Estoque.DAL.Entities;
+﻿using Estoque.Entities;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;

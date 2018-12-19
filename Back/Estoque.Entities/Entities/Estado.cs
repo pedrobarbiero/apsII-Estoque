@@ -1,7 +1,8 @@
 ﻿using Common.Attributes;
+using Estoque.Entities;
 using System.Collections.Generic;
 
-namespace Estoque.DAL.Entities
+namespace Estoque.Entities
 {
     public class Estado : Entity
     {

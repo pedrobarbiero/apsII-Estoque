@@ -1,4 +1,4 @@
-﻿using Estoque.DAL.Entities;
+﻿using Estoque.Entities;
 using Estoque.DAL.InterfacesRepository;
 using Estoque.DAL.Repositories;
 using Microsoft.AspNetCore.Mvc;
