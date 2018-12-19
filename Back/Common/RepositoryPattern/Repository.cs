@@ -1,6 +1,6 @@
 ﻿using Common;
+using Common.RepositoryPattern;
 using Estoque.Entities;
-using Estoque.DAL.InterfacesRepository;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -9,7 +9,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Estoque.DAL.Repositories
+namespace Comon.RepositoryPattern
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : Entity
     {

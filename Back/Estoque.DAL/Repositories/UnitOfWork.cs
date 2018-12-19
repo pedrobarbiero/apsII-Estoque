@@ -1,15 +1,16 @@
-﻿using Estoque.DAL.Context;
-using Estoque.DAL.InterfacesRepository;
+﻿using Estoque.DAL.InterfacesRepository;
+using Estoque.DAL.Repositories;
+using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
-namespace Estoque.DAL.Repositories
+namespace Comon.RepositoryPattern
 {
     public class UnitOfWork : IUnitOfWork
     {
-        private readonly EstoqueContext _context;
+        private readonly DbContext _context;
 
 
-        public UnitOfWork(EstoqueContext context)
+        public UnitOfWork(DbContext context)
         {
             _context = context;
             PessoaRepository = new PessoaRepository(_context);
