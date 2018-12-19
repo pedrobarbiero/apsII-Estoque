@@ -59,57 +59,52 @@
                     <li class="active">
                     <li><a asp-area="" asp-controller="Home" asp-action="Index"><i class="menu-icon fa fa-laptop"></i> INÍCIO</a></li>
                     <li class="menu-title">Menu</li><!-- /.menu-title -->
+                    @*<li class="menu-item-has-children dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-shopping-cart"></i>Estoque</a>
+            <ul class="sub-menu children dropdown-menu">
+                <li><i class="fa fa-ticket"></i><a href="#">Produto</a></li>
+            </ul>
+        </li>
 
+        <li class="menu-item-has-children dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tags"></i>Fiscal</a>
+            <ul class="sub-menu children dropdown-menu">
+                <li><i class="fa fa-tag"></i><a href="#">Nota fiscal</a></li>
+            </ul>
+        </li>
+        <li class="menu-item-has-children dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-dollar"></i>Financeiro</a>
+            <ul class="sub-menu children dropdown-menu">
+                <li><i class="fa fa-archive"></i><a href="#">Vendas a prazo</a></li>
+            </ul>
+        </li>*@
                     <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-shopping-cart"></i>Estoque</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-list"></i>Manipuladores</a>
                         <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-ticket"></i><a href="#">Produto</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-tags"></i>Fiscal</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-tag"></i><a href="#">Nota fiscal</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-dollar"></i>Financeiro</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-archive"></i><a href="#">Vendas a prazo</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-id-card-o"></i>Manipuladores</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="fa fa-users"></i><a href="#">Usuário</a></li>
-                            <li><i class="fa fa-users"></i><a href="#">Cliente</a></li>
-                            <li><i class="fa fa-users"></i><a href="#">Fornecedor</a></li>
-                            <li><i class="fa fa-users"></i><a href="#">Funcionário</a></li>
                             <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Paises" asp-action="Index">Pais</a></li>
                             <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Estados" asp-action="Index">Estado</a></li>
                             <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Cidades" asp-action="Index">Cidade</a></li>
-                            <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Endereco" asp-action="Index">Endereço</a></li>
-                            <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Telefone" asp-action="Index">Telefone</a></li>
+                            <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Enderecos" asp-action="Index">Endereço</a></li>
+                            <li><i class="fa fa-users"></i><a asp-area="" asp-controller="Telefones" asp-action="Index">Telefone</a></li>
                         </ul>
                     </li>
-                    <li class="menu-title">Configurações</li><!-- /.menu-title -->
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-gears"></i>Conta</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-user"></i><a href="#">Conta</a></li>
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="#">Bloquear</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item-has-children dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-info"></i>Aplicação</a>
-                        <ul class="sub-menu children dropdown-menu">
-                            <li><i class="menu-icon fa fa-sign-in"></i><a href="#">Informações</a></li>
-                            <li><i class="menu-icon fa fa-info-circle"></i><a href="#">Wiki</a></li>
-                            <li><i class="menu-icon fa fa-comments-o"></i><a href="#">Suporte</a></li>
-                            <li><i class="menu-icon fa fa-circle-o"></i><a href="#">Versão 1.0</a></li>
-                        </ul>
-                    </li>
+                    @* <li class="menu-title">Configurações</li><!-- /.menu-title -->
+        <li class="menu-item-has-children dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-gears"></i>Conta</a>
+            <ul class="sub-menu children dropdown-menu">
+                <li><i class="menu-icon fa fa-user"></i><a href="#">Conta</a></li>
+                <li><i class="menu-icon fa fa-sign-in"></i><a href="#">Bloquear</a></li>
+            </ul>
+        </li>
+        <li class="menu-item-has-children dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="menu-icon fa fa-info"></i>Aplicação</a>
+            <ul class="sub-menu children dropdown-menu">
+                <li><i class="menu-icon fa fa-sign-in"></i><a href="#">Informações</a></li>
+                <li><i class="menu-icon fa fa-info-circle"></i><a href="#">Wiki</a></li>
+                <li><i class="menu-icon fa fa-comments-o"></i><a href="#">Suporte</a></li>
+                <li><i class="menu-icon fa fa-circle-o"></i><a href="#">Versão 1.0</a></li>
+            </ul>
+        </li>*@
                 </ul>
             </div><!-- /.navbar-collapse -->
         </nav>
