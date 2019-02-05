@@ -1,16 +1,15 @@
-﻿using Estoque.DAL.Entities;
+﻿using Estoque.Entities;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
 using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Threading.Tasks;
 
-namespace Estoque.DAL.InterfacesRepository
+namespace Common.RepositoryPattern
 {
     public interface IRepository<TEntity> where TEntity : Entity
     {
         SelectList CreateSelectList(long id);
-        Type Classe();
         TEntity Find(long id);
         IEnumerable<TEntity> Get();
         IEnumerable<TEntity> Get(Expression<Func<TEntity, bool>> predicate);

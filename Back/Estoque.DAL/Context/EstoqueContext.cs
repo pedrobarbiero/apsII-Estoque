@@ -1,4 +1,5 @@
-﻿using Estoque.DAL.Entities;
+﻿using Estoque.Entities;
+using Estoque.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Estoque.DAL.Context

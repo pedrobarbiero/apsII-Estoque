@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace Estoque.DAL.Entities
+namespace Estoque.Entities
 {
     public abstract class Entity
     {

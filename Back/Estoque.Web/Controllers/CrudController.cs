@@ -1,6 +1,7 @@
-﻿using Estoque.DAL.Entities;
+﻿using Common.RepositoryPattern;
+using Comon.RepositoryPattern;
 using Estoque.DAL.InterfacesRepository;
-using Estoque.DAL.Repositories;
+using Estoque.Entities;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;

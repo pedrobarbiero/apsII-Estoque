@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.106
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28407.52
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estoque.Web", "Estoque.Web\Estoque.Web.csproj", "{555604D6-BE99-4313-A2F4-A6F9400F4413}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Estoque.DAL", "Estoque.DAL\Estoque.DAL.csproj", "{BD590D7B-F771-46E9-9F8B-9A8D154390EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{76EA4CE1-B5AD-4291-B4E3-BEF1E6F2B8CD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{76EA4CE1-B5AD-4291-B4E3-BEF1E6F2B8CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Estoque.Entities", "Estoque.Entities\Estoque.Entities.csproj", "{19D99974-1FCB-4620-B4A3-A1622E057D13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{76EA4CE1-B5AD-4291-B4E3-BEF1E6F2B8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76EA4CE1-B5AD-4291-B4E3-BEF1E6F2B8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76EA4CE1-B5AD-4291-B4E3-BEF1E6F2B8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19D99974-1FCB-4620-B4A3-A1622E057D13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19D99974-1FCB-4620-B4A3-A1622E057D13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19D99974-1FCB-4620-B4A3-A1622E057D13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19D99974-1FCB-4620-B4A3-A1622E057D13}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

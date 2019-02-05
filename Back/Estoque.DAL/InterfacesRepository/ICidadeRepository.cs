@@ -1,4 +1,5 @@
-﻿using Estoque.DAL.Entities;
+﻿using Common.RepositoryPattern;
+using Estoque.Entities;
 
 namespace Estoque.DAL.InterfacesRepository
 {
